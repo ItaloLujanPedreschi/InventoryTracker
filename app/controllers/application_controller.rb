@@ -20,10 +20,10 @@ class ApplicationController < ActionController::Base
     end
 
     def require_signed_in!
-        redirect_to new_session_url unless signed_in?
+        redirect_to new_session_url unless logged_in?
     end
 
     def require_signed_out!
-        redirect_to businesses_url if signed_in?
+        redirect_to businesses_url if logged_in?
     end
 end

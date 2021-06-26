@@ -2,6 +2,11 @@ class UsersController < ApplicationController
     before_action :require_signed_in!, only: [:show]
     before_action :require_signed_out!, only: [:new, :create]
 
+    def new
+        @user = User.new
+        render :new
+    end
+
     def show
         @user = User.find_by(id: params[:id])
     end

@@ -168,3 +168,91 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 28966)
 
 
+Started GET "/" for ::1 at 2021-06-25 20:58:00 -0700
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5501)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6625)
+
+
+Started GET "/" for ::1 at 2021-06-25 20:58:31 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 236)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 985)
+
+
+Started GET "/users" for ::1 at 2021-06-25 20:58:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2021-06-25 20:59:02 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2843)
+
+
+
+NoMethodError - undefined method `signed_in?' for #<UsersController:0x007fd1ea166458>:
+  app/controllers/application_controller.rb:27:in `require_signed_out!'
+
+Started POST "/__better_errors/ba0b2d9fbc30b3d9/variables" for ::1 at 2021-06-25 20:59:02 -0700
+Started GET "/users/new" for ::1 at 2021-06-25 20:59:59 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4688)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4758)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 47.4ms | Allocations: 13034)
+
+
+
+NameError - undefined local variable or method `auth_token' for #<ActionView::Base:0x007fd23a5f7300>:
+  app/views/users/new.html.erb:4
+  app/controllers/users_controller.rb:7:in `new'
+
+Started POST "/__better_errors/558c798a1c9ebe06/variables" for ::1 at 2021-06-25 20:59:59 -0700
+Started GET "/users/new" for ::1 at 2021-06-25 21:01:12 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5462)
+Completed 200 OK in 32ms (Views: 7.4ms | ActiveRecord: 17.8ms | Allocations: 11425)
+
+
+Started GET "/session" for ::1 at 2021-06-25 21:04:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session/new" for ::1 at 2021-06-25 21:05:06 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5424)
+Completed 200 OK in 22ms (Views: 15.1ms | ActiveRecord: 1.8ms | Allocations: 7279)
+
+
+Started GET "/users/new" for ::1 at 2021-06-25 21:05:08 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5411)
+Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 3.7ms | Allocations: 7198)
+
+
