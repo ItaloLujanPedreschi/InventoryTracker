@@ -32,7 +32,7 @@ class BusinessesController < ApplicationController
             flash.now[:errors] = @business.errors.full_messages
             render :edit
         end
-  end
+    end
 
     private
     def business_params
