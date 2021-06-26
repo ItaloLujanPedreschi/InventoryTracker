@@ -1,13 +1,13 @@
 class CreateItems < ActiveRecord::Migration[6.1]
     def change
         create_table :items do |t|
-            t.integer :item_id, null: false
+            t.integer :business_id, null: false
             t.string :name, null: false
-            t.i :serial_number
-
-            t.text :notes
+            t.text :description
+            t.integer :quantity, null: false
 
             t.timestamps
         end
+        add_index :items, :business_id
     end
 end
