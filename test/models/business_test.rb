@@ -1,22 +1,21 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: businesses
 #
 #  id          :bigint           not null, primary key
 #  description :text
 #  name        :string           not null
-#  quantity    :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  business_id :integer          not null
+#  user_id     :integer          not null
 #
 # Indexes
 #
-#  index_items_on_business_id  (business_id)
+#  index_businesses_on_user_id  (user_id)
 #
 require "test_helper"
 
-class ItemTest < ActiveSupport::TestCase
+class BusinessTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
