@@ -5,10 +5,6 @@ class BusinessesController < ApplicationController
         @business = Business.new
     end
 
-    def index
-        @businesses = Business.find_by(user_id: current_user.id)
-    end
-
     def show
         @business = Business.find_by(id: params[:id])
     end

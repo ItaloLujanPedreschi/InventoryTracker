@@ -2,11 +2,7 @@ class UnitsController < ApplicationController
     before_action :require_signed_in!
 
     def new
-        @unit = Unit.new
-    end
-
-    def index
-        @units = Unit.find_by(user_id: current_user.id)
+        @unit = Unit.new(item_id: params[:item_id])
     end
 
     def show
@@ -15,9 +11,8 @@ class UnitsController < ApplicationController
 
     def create
         @unit = Unit.new(unit_params)
-        @unit.item_id = current_user.
         if @unit.save
-            redirect_to item_url(@unit.business_id)
+            redirect_to item_url(@unit.item_id)
         else
             flash.now[:errors] = @unit.errors.full_messages
             render :new

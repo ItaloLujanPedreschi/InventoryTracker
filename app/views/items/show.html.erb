@@ -3,9 +3,9 @@
 <ul>
     <% unless @item.units.nil? %>
         <% @item.units.each do |unit| %>
-            <li><a href="<%= unit_url(unit) %>"><%= unit.name %><br></a></li>
+            <li><%= unit["serial_number"] %></li>
         <% end %>
     <% end %>
 </ul>
 
-<a href="<%= new_item_url %>">Add a unit</a>
+<a href="<%= new_item_unit_url(@item.id) %>">Add a unit</a>
