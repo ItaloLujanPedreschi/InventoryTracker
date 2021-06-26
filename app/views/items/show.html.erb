@@ -1,5 +1,7 @@
 <h1><%= @item.name %></h1>
+<a href="<%= edit_item_url(@item) %>">Edit<br></a>
 
+<h3>Units</h3>
 <ul>
     <% unless @item.units.nil? %>
         <% @item.units.each do |unit| %>

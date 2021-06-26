@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
     def create
         @item = Item.new(item_params)
-        if @item.save!
+        if @item.save
             redirect_to business_url(@item.business_id)
         else
             flash.now[:errors] = @item.errors.full_messages

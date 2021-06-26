@@ -1,0 +1,5 @@
+<h1>Edit your item!</h1>
+
+<%= render "form", is_edit: true, item: @item %>
+
+<a href="<%= item_url(@item.id) %>">Return to your item</a>

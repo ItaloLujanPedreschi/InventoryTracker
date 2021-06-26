@@ -1,6 +1,8 @@
 <h1><%= @business.name %></h1>
 <a href="<%= edit_business_url(@business) %>">Edit<br></a>
 
+
+<h3>Items</h3>
 <ul>
     <% unless @business.items.nil? %>
         <% @business.items.each do |item| %>
