@@ -1,0 +1,11 @@
+<h1>Businesses</h1>
+
+<ul>
+    <% unless @user.businesses.nil? %>
+        <% @user.businesses.each do |business| %>
+            <li><a href="<%= business_url(business) %>"><%= business.name %><br></a></li>
+        <% end %>
+    <% end %>
+</ul>
+
+<a href="<%= new_business_url %>">Create a new business!</a>

@@ -11,6 +11,23 @@
   </head>
 
   <body>
-    <%= yield %>
+        <% if current_user %>
+            <ul>
+                <li><%= current_user.name %>
+                <li><%= button_to "Logout", session_url, method: :delete %></li>
+            </ul>
+        <% else %>
+            <%= link_to "Sign in!", new_session_url %>
+            <br><br>
+        <% end %>
+
+    <div class="errors">
+        <% if flash[:errors] %>
+            <% flash[:errors].each do |error| %>
+                <%= error %>
+            <% end %>
+        <% end %>
+    </div>
+        <%= yield %>
   </body>
 </html>

@@ -1,0 +1,11 @@
+<h1><%= @item.name %></h1>
+
+<ul>
+    <% unless @item.units.nil? %>
+        <% @item.units.each do |unit| %>
+            <li><a href="<%= unit_url(unit) %>"><%= unit.name %><br></a></li>
+        <% end %>
+    <% end %>
+</ul>
+
+<a href="<%= new_item_url %>">Add a unit</a>
