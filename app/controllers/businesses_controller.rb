@@ -1,12 +1,12 @@
 class BusinessesController < ApplicationController
     before_action :require_signed_in!
 
-    def new
-        @business = Business.new
-    end
-
     def show
         @business = Business.find_by(id: params[:id])
+    end
+
+    def new
+        @business = Business.new
     end
 
     def create
@@ -19,6 +19,20 @@ class BusinessesController < ApplicationController
             render :new
         end
     end
+
+    def edit
+        @business = Business.find(params[:id])
+    end
+
+    def update
+        @business = Business.find(params[:id])
+        if @business.update(business_params)
+            redirect_to business_url(@business.id)
+        else
+            flash.now[:errors] = @business.errors.full_messages
+            render :edit
+        end
+  end
 
     private
     def business_params

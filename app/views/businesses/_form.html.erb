@@ -1,0 +1,24 @@
+<% if is_edit %>
+    <% action = business_url(business.id) %>
+    <% button_text = "Edit!" %>
+<% else %>
+    <% action = businesses_url %>
+    <% button_text = "Create!" %>
+<% end %>
+
+<form action="<%= action %>" method="post">
+    <%= auth_token %>
+    <% if is_edit %>
+        <input type="hidden" name="_method" value="patch">
+    <% end %>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="business[name]" value="<%= business.name %>">
+
+    <label for="description">Description</label>
+    <textarea id="description" name="business[description]" rows="4" cols="50"><%= business.description %></textarea>
+
+    <input type="submit" value="<%= button_text %>">
+
+    <br>
+</form>
