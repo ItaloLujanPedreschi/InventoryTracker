@@ -1,0 +1,26 @@
+<% if is_edit %>
+    <% action = unit_url(unit.id) %>
+    <% button_text = "Edit!" %>
+<% else %>
+    <% action = units_url %>
+    <% button_text = "Create!" %>
+<% end %>
+
+<form action="<%= action %>" method="post">
+    <%= auth_token %>
+    <% if is_edit %>
+        <input type="hidden" name="_method" value="patch">
+    <% end %>
+
+    <label for="serial_number">Serial Number</label>
+    <input type="text" id="serial_number" name="unit[serial_number]" value="<%= unit["serial_number"] %>">
+
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="unit[notes]" rows="4" cols="50"><%= unit.notes %></textarea>
+
+    <input type="hidden" name="unit[item_id]" value="<%= @unit.item_id %>">
+
+    <input type="submit" value="<%= button_text %>">
+
+    <br>
+</form>

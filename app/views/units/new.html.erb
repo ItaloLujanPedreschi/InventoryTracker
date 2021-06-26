@@ -1,19 +1,5 @@
 <h1>Create a new item!</h1>
 
-<form action="<%= units_url %>" method="post">
-    <%= auth_token %>
-
-    <label for="serial_number">Serial Number</label>
-    <input type="text" id="serial_number" name="unit[serial_number]">
-
-    <label for="notes">Notes</label>
-    <textarea id="notes" name="unit[notes]" rows="4" cols="50"></textarea>
-
-    <input type="hidden" name="unit[item_id]" value="<%= @unit.item_id %>">
-
-    <input type="submit" value="Create!">
-
-    <br>
-</form>
+<%= render "form", is_edit: false, unit: @unit %>
 
 <a href="<%= item_url(@unit.item_id) %>">Return to item</a>
