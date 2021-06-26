@@ -1,0 +1,121 @@
+  [1m[35m (96.9ms)[0m  [1m[35mCREATE DATABASE "InventoryTracker_development" ENCODING = 'unicode'[0m
+  [1m[35m (42.3ms)[0m  [1m[35mCREATE DATABASE "InventoryTracker_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-06-25 19:35:03 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 516)
+Completed 200 OK in 21ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4302)
+
+
+Started GET "/" for ::1 at 2021-06-25 19:35:06 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.8ms | Allocations: 344)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 1137)
+
+
+Started GET "/" for ::1 at 2021-06-25 19:40:49 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.2ms | Allocations: 227)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 866)
+
+
+Started GET "/index" for ::1 at 2021-06-25 19:40:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/items" for ::1 at 2021-06-25 19:40:59 -0700
+  
+SyntaxError (/Users/italo/Desktop/Inventory Tracker/InventoryTracker/app/controllers/items_controller.rb:3: syntax error, unexpected '<'
+        <h1>Hello Rails</h1>
+        ^
+/Users/italo/Desktop/Inventory Tracker/InventoryTracker/app/controllers/items_controller.rb:3: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+        <h1>Hello Rails</h1>
+                  ^~~~~
+/Users/italo/Desktop/Inventory Tracker/InventoryTracker/app/controllers/items_controller.rb:5: unterminated regexp meets end of file
+/Users/italo/Desktop/Inventory Tracker/InventoryTracker/app/controllers/items_controller.rb:5: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/items_controller.rb:3: syntax error, unexpected '<'
+app/controllers/items_controller.rb:3: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+app/controllers/items_controller.rb:5: unterminated regexp meets end of file
+app/controllers/items_controller.rb:5: syntax error, unexpected end-of-input, expecting end
+app/controllers/items_controller.rb:3: syntax error, unexpected '<'
+app/controllers/items_controller.rb:3: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+app/controllers/items_controller.rb:5: unterminated regexp meets end of file
+app/controllers/items_controller.rb:5: syntax error, unexpected end-of-input, expecting end
+app/controllers/items_controller.rb:3: syntax error, unexpected '<'
+app/controllers/items_controller.rb:3: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+app/controllers/items_controller.rb:5: unterminated regexp meets end of file
+app/controllers/items_controller.rb:5: syntax error, unexpected end-of-input, expecting end
+Started GET "/items" for ::1 at 2021-06-25 19:41:42 -0700
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 112)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/italo/Desktop/Inventory Tracker/InventoryTracker/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 1312ms
+Built at: 06/25/2021 7:41:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3189.7ms | Allocations: 18253)
+Completed 200 OK in 3192ms (Views: 3191.4ms | ActiveRecord: 0.0ms | Allocations: 19446)
+
+
+Started GET "/items" for ::1 at 2021-06-25 19:47:47 -0700
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 7658)
+Completed 200 OK in 34ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 10405)
+
+
+Started GET "/" for ::1 at 2021-06-25 19:47:50 -0700
+Processing by ItemsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5119)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 5499)
+
+
