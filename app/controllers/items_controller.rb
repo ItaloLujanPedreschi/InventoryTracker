@@ -2,7 +2,9 @@ class ItemsController < ApplicationController
     before_action :require_signed_in!
 
     def new
-        @item = Item.new
+        debugger
+        @item = Item.new(business_id: params[:business_id])
+        debugger
     end
 
     def index
@@ -14,13 +16,14 @@ class ItemsController < ApplicationController
     end
 
     def create
+        debugger
         @item = Item.new(item_params)
-        @item.business_id = current_user.
-        if @item.save
+        debugger
+        if @item.save!
             redirect_to business_url(@item.business_id)
         else
             flash.now[:errors] = @item.errors.full_messages
-            render :new
+            render new_business_item_url(@item.business_id)
         end
     end
 

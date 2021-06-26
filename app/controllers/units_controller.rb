@@ -15,9 +15,9 @@ class UnitsController < ApplicationController
 
     def create
         @unit = Unit.new(unit_params)
-        @unit.business_id = current_user.
+        @unit.item_id = current_user.
         if @unit.save
-            redirect_to business_url(@unit.business_id)
+            redirect_to item_url(@unit.business_id)
         else
             flash.now[:errors] = @unit.errors.full_messages
             render :new
@@ -26,6 +26,6 @@ class UnitsController < ApplicationController
 
     private
     def unit_params
-        params.require(:item).permit(:business_id, :name, :description, :quantity)
+        params.require(:unit).permit(:item_id, :notes, :serial_number)
     end
 end

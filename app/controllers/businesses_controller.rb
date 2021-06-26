@@ -18,7 +18,6 @@ class BusinessesController < ApplicationController
         @business.user_id = current_user.id
         if @business.save
             redirect_to user_url(current_user)
-            # redirect_to business_url(@business)
         else
             flash.now[:errors] = @business.errors.full_messages
             render :new
