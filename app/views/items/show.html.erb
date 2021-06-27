@@ -5,7 +5,10 @@
 <ul>
     <% unless @item.units.nil? %>
         <% @item.units.each do |unit| %>
-            <li><a href="<%= unit_url(unit) %>"><%= unit["serial_number"] %></a></li>
+            <li>
+                <a href="<%= unit_url(unit) %>"><%= unit["serial_number"] %></a>
+                <%= link_to "Delete", unit_url(unit), method: 'DELETE' %>
+            </li>
         <% end %>
     <% end %>
 </ul>

@@ -31,7 +31,13 @@ class UnitsController < ApplicationController
             flash.now[:errors] = @unit.errors.full_messages
             render :edit
         end
-    end    
+    end
+
+    def destroy
+        @unit = Unit.find_by(id: params[:id])
+        @unit.destroy
+        redirect_to item_url(@unit.item_id)
+    end
 
     private
     def unit_params
