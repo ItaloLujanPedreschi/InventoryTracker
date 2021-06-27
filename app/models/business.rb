@@ -11,10 +11,12 @@
 #
 # Indexes
 #
-#  index_businesses_on_user_id  (user_id)
+#  index_businesses_on_user_id           (user_id)
+#  index_businesses_on_user_id_and_name  (user_id,name) UNIQUE
 #
 class Business < ApplicationRecord
     validates :user_id, :name, presence: true
+    validates :name, uniqueness: { scope: :user_id }
 
     belongs_to :user,
     primary_key: :id,
