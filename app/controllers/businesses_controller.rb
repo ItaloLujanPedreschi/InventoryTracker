@@ -34,6 +34,12 @@ class BusinessesController < ApplicationController
         end
     end
 
+    def destroy
+        @business = Business.find_by(id: params[:id])
+        @business.destroy
+        redirect_to user_url(@business.user_id)
+    end
+
     private
     def business_params
         params.require(:business).permit(:user_id, :name, :description)
