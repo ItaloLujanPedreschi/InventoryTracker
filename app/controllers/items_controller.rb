@@ -33,6 +33,12 @@ class ItemsController < ApplicationController
         end
     end
 
+    def destroy
+        @item = Item.find_by(id: params[:id])
+        @item.destroy
+        redirect_to business_url(@item.business_id)
+    end
+
     private
     def item_params
         params.require(:item).permit(:business_id, :name, :description, :quantity)
