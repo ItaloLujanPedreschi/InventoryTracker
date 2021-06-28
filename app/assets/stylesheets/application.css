@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+    font-family: 'Metrophobic', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li:nth-child(2) {
+    color: red;
+    padding-left: 20px;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}

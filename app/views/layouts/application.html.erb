@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>InventoryTracker</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <head>
+        <title>Inventory Tracker</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+    </head>
 
-  <body>
-        <% if current_user %>
-            <ul>
-                <li><%= current_user.name %>
-                <li><%= button_to "Logout", session_url, method: :delete %></li>
-            </ul>
-        <% else %>
-            <%= link_to "Sign in!", new_session_url %>
-            <br><br>
-        <% end %>
-
-    <div class="errors">
-        <% if flash[:errors] %>
-            <% flash[:errors].each do |error| %>
-                <%= error %>
+    <body>
+        <header>
+            <% if current_user %>
+                <a href="<%= user_url(@current_user.id) %>">Inventory Tracker</a>
+                <ul>
+                    <li><%= current_user.name %></li>
+                    <li><%= button_to "Logout", session_url, method: :delete %></li>
+                </ul>
             <% end %>
-        <% end %>
-    </div>
+        </header>
         <%= yield %>
-  </body>
+    </body>
 </html>
