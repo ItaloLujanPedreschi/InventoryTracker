@@ -49,6 +49,15 @@ header ul li:nth-child(2) {
     padding-left: 20px;
 }
 
+input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 .content {
     width: 80%;
     margin: 0 auto;
