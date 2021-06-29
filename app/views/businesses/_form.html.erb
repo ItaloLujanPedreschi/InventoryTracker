@@ -6,7 +6,7 @@
     <% button_text = "Create!" %>
 <% end %>
 
-<form action="<%= action %>" method="post">
+<form class="form" action="<%= action %>" method="post">
     <%= auth_token %>
     <% if is_edit %>
         <input type="hidden" name="_method" value="patch">
@@ -19,6 +19,4 @@
     <textarea id="description" name="business[description]" rows="4" cols="50"><%= business.description %></textarea>
 
     <input type="submit" value="<%= button_text %>">
-
-    <br>
 </form>

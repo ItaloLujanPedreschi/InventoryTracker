@@ -1,5 +1,5 @@
 <div class="content">
-    <a class="back" href="<%= item_url(@item.id) %>">Return to your item</a>
+    <a class="back" href="<%= business_url(@item.business_id) %>">Return to your business</a>
     <h2>Edit your item!</h2>
     <%= render "form", is_edit: true, item: @item %>
 </div>
