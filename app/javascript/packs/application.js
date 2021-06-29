@@ -43,7 +43,23 @@ $(document).on('turbolinks:load', function() {
 
 
     // Business show page
+    $('.item-row').on('mouseenter', event => {
+        $(event.currentTarget).addClass('hovering');
+        $(event.currentTarget).removeClass('not-hovering');
+    })
 
+    $('.item-row').on('mouseleave', event => {
+        $(event.currentTarget).addClass('not-hovering');
+        $(event.currentTarget).removeClass('hovering');
+    })
 
+    $('.grow-on-hover').on('mouseenter', event => {
+        $(event.currentTarget).addClass('hover-grow');
+        $(event.currentTarget).removeClass('no-hover-grow');
+    })
 
+    $('.grow-on-hover').on('mouseleave', event => {
+        $(event.currentTarget).addClass('no-hover-grow');
+        $(event.currentTarget).removeClass('hover-grow');
+    })
 });

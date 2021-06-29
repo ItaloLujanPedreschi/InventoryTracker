@@ -1,5 +1,7 @@
-<h1>Edit your business!</h1>
+<div class="content">
+    <h1>Edit your business!</h1>
 
-<%= render "form", is_edit: true, business: @business %>
+    <%= render "form", is_edit: true, business: @business %>
 
-<a href="<%= business_url(@business.id) %>">Return to your business</a>
+    <a href="<%= business_url(@business.id) %>">Return to your business</a>
+</div>

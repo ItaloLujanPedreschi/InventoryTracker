@@ -38,6 +38,7 @@
         grid-column-gap: 15px;
         grid-row-gap: 15px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-top: 0;
 
         .business-tile {
             background-color: rgba(245, 245, 247, 1);
