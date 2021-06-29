@@ -36,9 +36,12 @@ header {
     align-items: center;
 }
 
-header ul {
+ul {
     padding: 0;
     list-style: none;
+}
+
+header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;

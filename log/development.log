@@ -10093,3 +10093,849 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 50ms (Views: 33.8ms | ActiveRecord: 7.5ms | Allocations: 8775)
 
 
+Started GET "/users/3" for ::1 at 2021-06-28 18:46:42 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (4.0ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 18.8ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.9ms | Allocations: 27943)
+Completed 200 OK in 224ms (Views: 108.0ms | ActiveRecord: 51.8ms | Allocations: 33659)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:48:05 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.5ms | Allocations: 30671)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 7.4ms | Allocations: 32397)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:48:36 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.3ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 29621)
+Completed 200 OK in 66ms (Views: 48.8ms | ActiveRecord: 8.9ms | Allocations: 31347)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:49:03 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.5ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 27582)
+Completed 200 OK in 39ms (Views: 25.2ms | ActiveRecord: 7.8ms | Allocations: 29308)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:49:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.4ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 26263)
+Completed 200 OK in 71ms (Views: 56.2ms | ActiveRecord: 7.6ms | Allocations: 27989)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:51:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 26086)
+Completed 200 OK in 60ms (Views: 43.4ms | ActiveRecord: 7.4ms | Allocations: 27812)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:51:29 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 28006)
+Completed 200 OK in 75ms (Views: 60.9ms | ActiveRecord: 6.5ms | Allocations: 29731)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:54:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.4ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 28145)
+Completed 200 OK in 43ms (Views: 29.6ms | ActiveRecord: 7.0ms | Allocations: 29871)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:54:41 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.0ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 31201)
+Completed 200 OK in 50ms (Views: 22.1ms | ActiveRecord: 23.5ms | Allocations: 32926)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:56:18 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 27305)
+Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 6.4ms | Allocations: 29778)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:57:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 29796)
+Completed 200 OK in 38ms (Views: 25.0ms | ActiveRecord: 6.1ms | Allocations: 31523)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:57:48 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.0ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 32665)
+Completed 200 OK in 78ms (Views: 61.1ms | ActiveRecord: 7.1ms | Allocations: 34390)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:58:01 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.5ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6473)
+Completed 200 OK in 25ms (Views: 13.1ms | ActiveRecord: 5.8ms | Allocations: 8199)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:58:02 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 6473)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 5.5ms | Allocations: 8198)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:58:16 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 6994)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 5.2ms | Allocations: 9467)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:59:04 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.7ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 29570)
+Completed 200 OK in 50ms (Views: 37.7ms | ActiveRecord: 5.8ms | Allocations: 31296)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:59:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 29647)
+Completed 200 OK in 55ms (Views: 40.4ms | ActiveRecord: 7.2ms | Allocations: 31373)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 18:59:51 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.4ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 7012)
+Completed 200 OK in 32ms (Views: 17.3ms | ActiveRecord: 5.8ms | Allocations: 9483)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 19:01:33 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.1ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 30204)
+Completed 200 OK in 57ms (Views: 44.9ms | ActiveRecord: 4.5ms | Allocations: 32676)
+
+
+Started DELETE "/businesses/6" for ::1 at 2021-06-28 19:01:39 -0700
+Processing by BusinessesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mBusiness Load (1.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+  [1m[36mItem Load (7.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."business_id" = $1[0m  [["business_id", 6]]
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+  [1m[36mUnit Load (4.1ms)[0m  [1m[34mSELECT "units".* FROM "units" WHERE "units"."item_id" = $1[0m  [["item_id", 6]]
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+  [1m[36mItem Destroy (6.3ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+  [1m[36mBusiness Destroy (1.8ms)[0m  [1m[31mDELETE FROM "businesses" WHERE "businesses"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/businesses_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 67ms (ActiveRecord: 30.9ms | Allocations: 6296)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 19:01:39 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.3ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 856)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6392)
+Completed 200 OK in 17ms (Views: 9.7ms | ActiveRecord: 3.6ms | Allocations: 8118)
+
+
+Started GET "/businesses/new" for ::1 at 2021-06-28 19:01:50 -0700
+Processing by BusinessesController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering businesses/new.html.erb within layouts/application
+  Rendered businesses/_form.html.erb (Duration: 3.7ms | Allocations: 402)
+  Rendered businesses/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 6455)
+Completed 200 OK in 31ms (Views: 22.1ms | ActiveRecord: 2.1ms | Allocations: 8608)
+
+
+Started POST "/businesses" for ::1 at 2021-06-28 19:02:35 -0700
+Processing by BusinessesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "business"=>{"name"=>"Google", "description"=>"The revolutionary search engine used by billions!"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "businesses" WHERE "businesses"."name" = $1 AND "businesses"."user_id" = $2 LIMIT $3[0m  [["name", "Google"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Create (14.4ms)[0m  [1m[32mINSERT INTO "businesses" ("user_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["name", "Google"], ["description", "The revolutionary search engine used by billions!"], ["created_at", "2021-06-29 02:02:35.976558"], ["updated_at", "2021-06-29 02:02:35.976558"]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 101ms (ActiveRecord: 23.9ms | Allocations: 16075)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 19:02:36 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.3ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6488)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 3.4ms | Allocations: 8214)
+
+
+Started GET "/businesses/new" for ::1 at 2021-06-28 19:02:38 -0700
+Processing by BusinessesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering businesses/new.html.erb within layouts/application
+  Rendered businesses/_form.html.erb (Duration: 1.2ms | Allocations: 98)
+  Rendered businesses/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 6390)
+Completed 200 OK in 36ms (Views: 28.3ms | ActiveRecord: 2.2ms | Allocations: 7533)
+
+
+Started POST "/businesses" for ::1 at 2021-06-28 19:10:17 -0700
+Processing by BusinessesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "business"=>{"name"=>"Apple", "description"=>"Elegant and powerful machines for the everyday creator."}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "businesses" WHERE "businesses"."name" = $1 AND "businesses"."user_id" = $2 LIMIT $3[0m  [["name", "Apple"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Create (2.2ms)[0m  [1m[32mINSERT INTO "businesses" ("user_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["name", "Apple"], ["description", "Elegant and powerful machines for the everyday creator."], ["created_at", "2021-06-29 02:10:17.367533"], ["updated_at", "2021-06-29 02:10:17.367533"]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 93ms (ActiveRecord: 52.1ms | Allocations: 8418)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 19:10:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.6ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 6581)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 4.0ms | Allocations: 8309)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:19:31 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.0ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1062)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 32333)
+Completed 200 OK in 181ms (Views: 98.5ms | ActiveRecord: 40.4ms | Allocations: 37247)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:19:44 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 31220)
+Completed 200 OK in 75ms (Views: 60.6ms | ActiveRecord: 7.1ms | Allocations: 32946)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:20:34 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.0ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 32663)
+Completed 200 OK in 67ms (Views: 52.7ms | ActiveRecord: 7.2ms | Allocations: 34389)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:20:41 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.7ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 6603)
+Completed 200 OK in 60ms (Views: 46.4ms | ActiveRecord: 7.1ms | Allocations: 8329)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:24:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 29768)
+Completed 200 OK in 64ms (Views: 47.7ms | ActiveRecord: 7.1ms | Allocations: 31494)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:24:33 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.6ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 28204)
+Completed 200 OK in 67ms (Views: 52.2ms | ActiveRecord: 7.4ms | Allocations: 29929)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:28:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 32506)
+Completed 200 OK in 62ms (Views: 47.5ms | ActiveRecord: 5.1ms | Allocations: 34233)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:29:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.7ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 27021)
+Completed 200 OK in 58ms (Views: 43.3ms | ActiveRecord: 6.2ms | Allocations: 28747)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:29:42 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.8ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 32885)
+Completed 200 OK in 56ms (Views: 46.7ms | ActiveRecord: 5.6ms | Allocations: 34611)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:30:07 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.1ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 32882)
+Completed 200 OK in 70ms (Views: 56.3ms | ActiveRecord: 6.6ms | Allocations: 34607)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:33:32 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (3.6ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 29571)
+Completed 200 OK in 77ms (Views: 63.6ms | ActiveRecord: 6.9ms | Allocations: 31298)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:34:05 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 489.9ms | Allocations: 32434)
+Completed 200 OK in 505ms (Views: 488.7ms | ActiveRecord: 9.8ms | Allocations: 34160)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:37:15 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.4ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 204.3ms | Allocations: 32520)
+Completed 200 OK in 222ms (Views: 202.7ms | ActiveRecord: 9.6ms | Allocations: 34246)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:37:22 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 31348)
+Completed 200 OK in 82ms (Views: 67.5ms | ActiveRecord: 6.2ms | Allocations: 33073)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:37:29 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 35437)
+Completed 200 OK in 49ms (Views: 39.5ms | ActiveRecord: 5.0ms | Allocations: 37163)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:37:52 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.8ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 33992)
+Completed 200 OK in 80ms (Views: 64.8ms | ActiveRecord: 6.6ms | Allocations: 35717)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:38:54 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.4ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 32519)
+Completed 200 OK in 65ms (Views: 49.3ms | ActiveRecord: 6.1ms | Allocations: 34245)
+
+
+Started GET "/businesses/new" for ::1 at 2021-06-28 20:39:37 -0700
+Processing by BusinessesController#new as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering businesses/new.html.erb within layouts/application
+  Rendered businesses/_form.html.erb (Duration: 0.7ms | Allocations: 98)
+  Rendered businesses/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 33754)
+Completed 200 OK in 67ms (Views: 59.6ms | ActiveRecord: 2.5ms | Allocations: 34896)
+
+
+Started GET "/businesses/new" for ::1 at 2021-06-28 20:39:37 -0700
+Processing by BusinessesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering businesses/new.html.erb within layouts/application
+  Rendered businesses/_form.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered businesses/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5753)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.9ms | Allocations: 6893)
+
+
+Started POST "/businesses" for ::1 at 2021-06-28 20:40:20 -0700
+Processing by BusinessesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "business"=>{"name"=>"Adobe", "description"=>"The industry leader in creativity solutions from amateur to professional."}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Exists? (9.0ms)[0m  [1m[34mSELECT 1 AS one FROM "businesses" WHERE "businesses"."name" = $1 AND "businesses"."user_id" = $2 LIMIT $3[0m  [["name", "Adobe"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mBusiness Create (11.7ms)[0m  [1m[32mINSERT INTO "businesses" ("user_id", "name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["name", "Adobe"], ["description", "The industry leader in creativity solutions from amateur to professional."], ["created_at", "2021-06-29 03:40:20.391463"], ["updated_at", "2021-06-29 03:40:20.391463"]]
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/businesses_controller.rb:15:in `create'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 51ms (ActiveRecord: 31.1ms | Allocations: 5160)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:40:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (1.3ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 6648)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 3.6ms | Allocations: 8373)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:41:02 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.7ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 33998)
+Completed 200 OK in 53ms (Views: 38.8ms | ActiveRecord: 7.4ms | Allocations: 35723)
+
+
+Started GET "/users/3" for ::1 at 2021-06-28 20:41:32 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XBrVxX-80Vc9ZKxYvlgaMg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mBusiness Load (2.9ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses" WHERE "businesses"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 31225)
+Completed 200 OK in 59ms (Views: 46.7ms | ActiveRecord: 6.1ms | Allocations: 32951)
+
+

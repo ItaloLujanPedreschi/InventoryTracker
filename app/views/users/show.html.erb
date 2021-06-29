@@ -1,11 +1,12 @@
-<div class="content">
+<div class="content business-content">
     <h1>Your Businesses</h1>
 
-    <ul>
+    <ul class="business-list">
         <% unless @user.businesses.nil? %>
             <% @user.businesses.each do |business| %>
-                <li>
-                    <a href="<%= business_url(business) %>"><%= business.name %><br></a>
+                <li class="business-tile">
+                    <a class="business-name" href="<%= business_url(business) %>"><%= business.name %></a>
+                    <p><%= business.description %></p>
                     <%= link_to "Delete", business_url(business), method: 'DELETE' %>
                 </li>
             <% end %>
