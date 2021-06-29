@@ -21,10 +21,4 @@ class Item < ApplicationRecord
     primary_key: :id,
     foreign_key: :business_id,
     class_name: :Business
-
-    has_many :units,
-    primary_key: :id,
-    foreign_key: :item_id,
-    class_name: :Unit,
-    dependent: :destroy
 end

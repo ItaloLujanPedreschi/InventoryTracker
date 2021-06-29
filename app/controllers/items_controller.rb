@@ -26,7 +26,7 @@ class ItemsController < ApplicationController
     def update
         @item = Item.find(params[:id])
         if @item.update(item_params)
-            redirect_to item_url(@item.id)
+            redirect_to business_url(@item.business_id)
         else
             flash.now[:errors] = @item.errors.full_messages
             render :edit

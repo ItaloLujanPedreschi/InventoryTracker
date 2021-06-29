@@ -14,10 +14,10 @@
     <body>
         <header>
             <% if current_user %>
-                <a href="<%= user_url(@current_user.id) %>">Inventory Tracker</a>
+                <a class="home link" href="<%= user_url(@current_user.id) %>">Inventory Tracker</a>
                 <ul>
                     <li><%= current_user.name %></li>
-                    <li><%= button_to "Logout", session_url, method: :delete %></li>
+                    <li class="link"><%= button_to "Logout", session_url, method: :delete %></li>
                 </ul>
             <% end %>
         </header>

@@ -7,8 +7,5 @@ Rails.application.routes.draw do
     resources :businesses, only: [:new, :show, :create, :edit, :update, :destroy] do
         resources :items, only: [:new]
     end
-    resources :items, only: [:show, :create, :edit, :update, :destroy] do
-        resources :units, only: [:new]
-    end
-    resources :units, only: [:show, :create, :edit, :update, :destroy]
+    resources :items, only: [:show, :create, :edit, :update, :destroy]
 end
