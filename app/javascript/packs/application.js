@@ -10,6 +10,16 @@ require("channels")
 require('jquery')
 
 $(document).on('turbolinks:load', function() {
+    $('.sign-up').on('mouseenter', event => {
+        $(event.currentTarget).addClass('sign-up-hover');
+        $(event.currentTarget).removeClass('no-sign-up-hover');
+    })
+
+    $('.sign-up').on('mouseleave', event => {
+        $(event.currentTarget).addClass('no-sign-up-hover');
+        $(event.currentTarget).removeClass('sign-up-hover');
+    })
+
     // User show page
     $('.business-tile').on('mouseenter', event => {
         $(event.currentTarget).addClass('hovering');

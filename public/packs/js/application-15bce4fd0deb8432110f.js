@@ -124,38 +124,76 @@ channels.keys().forEach(channels);
 /*!*********************************************!*\
   !*** ./app/javascript/packs/application.js ***!
   \*********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _rails_ujs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @rails/ujs */ "./node_modules/@rails/ujs/lib/assets/compiled/rails-ujs.js");
-/* harmony import */ var _rails_ujs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rails_ujs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js");
-/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(turbolinks__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _rails_activestorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @rails/activestorage */ "./node_modules/@rails/activestorage/app/assets/javascripts/activestorage.js");
-/* harmony import */ var _rails_activestorage__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_rails_activestorage__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var channels__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! channels */ "./app/javascript/channels/index.js");
-/* harmony import */ var channels__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(channels__WEBPACK_IMPORTED_MODULE_3__);
-// This file is automatically compiled by Webpack, along with any other files
+/* WEBPACK VAR INJECTION */(function($) {// This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+__webpack_require__(/*! @rails/ujs */ "./node_modules/@rails/ujs/lib/assets/compiled/rails-ujs.js").start();
 
+__webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js").start();
 
+__webpack_require__(/*! @rails/activestorage */ "./node_modules/@rails/activestorage/app/assets/javascripts/activestorage.js").start();
 
+__webpack_require__(/*! channels */ "./app/javascript/channels/index.js");
 
+__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-var jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$(document).on('turbolinks:load', function () {
+  $('.sign-up').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hovering');
+    $(event.currentTarget).removeClass('not-hovering');
+  });
+  $('.sign-up').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('not-hovering');
+    $(event.currentTarget).removeClass('hovering');
+  }); // User show page
 
-global.$ = global.jQuery = jQuery;
-window.$ = window.jQuery = jQuery;
-_rails_ujs__WEBPACK_IMPORTED_MODULE_0___default.a.start();
-turbolinks__WEBPACK_IMPORTED_MODULE_1___default.a.start();
-_rails_activestorage__WEBPACK_IMPORTED_MODULE_2__["start"]();
-Object(_rails_ujs__WEBPACK_IMPORTED_MODULE_0__["$"])(document).ready(function () {// $('.business-content').hide();
+  $('.business-tile').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hovering');
+    $(event.currentTarget).removeClass('not-hovering');
+  });
+  $('.business-tile').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('not-hovering');
+    $(event.currentTarget).removeClass('hovering');
+  });
+  $('.add-button').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('plus-hovering');
+    $(event.currentTarget).removeClass('plus-not-hovering');
+  });
+  $('.add-button').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('plus-not-hovering');
+    $(event.currentTarget).removeClass('plus-hovering');
+  });
+  $('.link').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('link-hover');
+    $(event.currentTarget).removeClass('link-not-hover');
+  });
+  $('.link').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('link-not-hover');
+    $(event.currentTarget).removeClass('link-hover');
+  }); // Business show page
+
+  $('.item-row').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hovering');
+    $(event.currentTarget).removeClass('not-hovering');
+  });
+  $('.item-row').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('not-hovering');
+    $(event.currentTarget).removeClass('hovering');
+  });
+  $('.grow-on-hover').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hover-grow');
+    $(event.currentTarget).removeClass('no-hover-grow');
+  });
+  $('.grow-on-hover').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('no-hover-grow');
+    $(event.currentTarget).removeClass('hover-grow');
+  });
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery/src/jquery */ "./node_modules/jquery/src/jquery.js")))
 
 /***/ }),
 
@@ -23771,36 +23809,6 @@ Copyright © 2018 Basecamp, LLC
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-var g; // This works in non-strict mode
-
-g = function () {
-  return this;
-}();
-
-try {
-  // This works if eval is allowed (see CSP)
-  g = g || new Function("return this")();
-} catch (e) {
-  // This works if the window reference is available
-  if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
-} // g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-
-module.exports = g;
-
-/***/ }),
-
 /***/ "./node_modules/webpack/buildin/module.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
@@ -23836,4 +23844,4 @@ module.exports = function (module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-1a3aef1b29f92f28ade0.js.map
+//# sourceMappingURL=application-15bce4fd0deb8432110f.js.map

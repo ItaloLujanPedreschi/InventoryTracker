@@ -141,11 +141,56 @@ __webpack_require__(/*! channels */ "./app/javascript/channels/index.js");
 
 __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-$(document).ready(function () {
+$(document).on('turbolinks:load', function () {
+  $('.sign-up').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('sign-up-hover');
+    $(event.currentTarget).removeClass('no-sign-up-hover');
+  });
+  $('.sign-up').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('no-sign-up-hover');
+    $(event.currentTarget).removeClass('sign-up-hover');
+  }); // User show page
+
   $('.business-tile').on('mouseenter', function (event) {
-    $(event.currentTarget).animate({
-      transform: scale(0.7)
-    }, 200);
+    $(event.currentTarget).addClass('hovering');
+    $(event.currentTarget).removeClass('not-hovering');
+  });
+  $('.business-tile').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('not-hovering');
+    $(event.currentTarget).removeClass('hovering');
+  });
+  $('.add-button').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('plus-hovering');
+    $(event.currentTarget).removeClass('plus-not-hovering');
+  });
+  $('.add-button').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('plus-not-hovering');
+    $(event.currentTarget).removeClass('plus-hovering');
+  });
+  $('.link').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('link-hover');
+    $(event.currentTarget).removeClass('link-not-hover');
+  });
+  $('.link').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('link-not-hover');
+    $(event.currentTarget).removeClass('link-hover');
+  }); // Business show page
+
+  $('.item-row').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hovering');
+    $(event.currentTarget).removeClass('not-hovering');
+  });
+  $('.item-row').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('not-hovering');
+    $(event.currentTarget).removeClass('hovering');
+  });
+  $('.grow-on-hover').on('mouseenter', function (event) {
+    $(event.currentTarget).addClass('hover-grow');
+    $(event.currentTarget).removeClass('no-hover-grow');
+  });
+  $('.grow-on-hover').on('mouseleave', function (event) {
+    $(event.currentTarget).addClass('no-hover-grow');
+    $(event.currentTarget).removeClass('hover-grow');
   });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery/src/jquery */ "./node_modules/jquery/src/jquery.js")))
@@ -23799,4 +23844,4 @@ module.exports = function (module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-dfed00d227be9c1dd321.js.map
+//# sourceMappingURL=application-0ad4c6254be13dfca865.js.map
