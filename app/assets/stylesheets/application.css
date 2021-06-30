@@ -267,3 +267,7 @@ input {
     transform: scale(1);
     transition: all 0.5s;
 }
+
+input[type="submit"]:disabled {
+    opacity: 0.5;
+}

@@ -7,7 +7,7 @@
 <% end %>
 
 <div class="form-container">
-    <form class="form" action="<%= action %>" method="post">
+    <form class="form item-form" action="<%= action %>" method="post">
         <div>
             <%= auth_token %>
             <% if is_edit %>
@@ -31,7 +31,7 @@
 
             <input type="hidden" name="item[business_id]" value="<%= item.business_id %>">
 
-            <input class="submit" type="submit" value="<%= button_text %>">
+            <input class="submit" id="item-submit" type="submit" disabled="disabled" value="<%= button_text %>">
         </div>
     </form>
 </div>

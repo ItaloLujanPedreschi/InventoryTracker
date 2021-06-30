@@ -82,4 +82,21 @@ $(document).on('turbolinks:load', function() {
         $(event.currentTarget).addClass('no-hover-grow');
         $(event.currentTarget).removeClass('hover-grow');
     })
+
+    // Disable submit buttons when required fields are not complete
+    // $('.item-form input').on('keyup', () => {
+    //     let empty = false;
+    //     $('.item-form input').each(() => {
+    //         console.log($(this).val());
+    //         if ($(this).val() == '') {
+    //             empty = true;
+    //         }
+    //     })
+
+    //     if (empty) {
+    //         $('#item-submit').attr('disabled', 'disabled');
+    //     } else {
+    //         $('#item-submit').removeAttr('disabled');
+    //     }
+    // })
 });
