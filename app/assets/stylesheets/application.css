@@ -237,7 +237,7 @@ input {
     padding-bottom: 5px;
 }
 
-.home-body {
+/* .home-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@ input {
     flex: 1;
     background-image: image-url('brent.png');
     background-size: cover;
-}
+} */
 
 .home-body a {
     display: block;
