@@ -16,7 +16,7 @@ class BusinessesController < ApplicationController
             redirect_to user_url(current_user)
         else
             flash.now[:errors] = @business.errors.full_messages
-            render :new
+            redirect_to new_business_url
         end
     end
 

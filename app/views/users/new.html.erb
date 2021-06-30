@@ -1,18 +1,29 @@
-<h1>Sign Up</h1>
+<div class="header">
+    <a class="home link" href="<%= new_session_url %>">Inventory Tracker</a>
+</div>
 
-<form class="form" action="<%= users_url %>" method="POST">
-    <%= auth_token %>
+<div class="content">
+    <div class="form-container sign-up-form">
+        <form class="form" action="<%= users_url %>" method="POST">
+            <div>
+                <%= auth_token %>
 
-    <label for="name">Name</label>
-    <input type="text" name="user[name]" id="name">
+                <h1>Sign Up</h1>
 
-    <label for="email">Email</label>
-    <input type="text" name="user[email]" id="email">
+                <label for="name">Name</label>
+                <input type="text" name="user[name]" id="name">
 
-    <label for="password">Password</label>
-    <input type="password" name="user[password]" id="password">
+                <label for="email">Email</label>
+                <input type="text" name="user[email]" id="email">
 
-    <input type="submit" value="Sign Up">
-</form>
+                <label for="password">Password</label>
+                <input type="password" name="user[password]" id="password">
 
-<a href="<%= new_session_url %>">Login!</a>
+                <input type="submit" value="Sign Up">
+
+                <p>Already have an account?</p>
+                <a class="login" href="<%= new_session_url %>">Login!</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -20,6 +20,16 @@ $(document).on('turbolinks:load', function() {
         $(event.currentTarget).removeClass('sign-up-hover');
     })
 
+    $('.login').on('mouseenter', event => {
+        $(event.currentTarget).addClass('hover-grow');
+        $(event.currentTarget).removeClass('no-hover-grow');
+    })
+
+    $('.login').on('mouseleave', event => {
+        $(event.currentTarget).addClass('no-hover-grow');
+        $(event.currentTarget).removeClass('hover-grow');
+    })
+
     // User show page
     $('.business-tile').on('mouseenter', event => {
         $(event.currentTarget).addClass('hovering');

@@ -6,17 +6,27 @@
     <% button_text = "Create!" %>
 <% end %>
 
-<form class="form" action="<%= action %>" method="post">
-    <%= auth_token %>
-    <% if is_edit %>
-        <input type="hidden" name="_method" value="patch">
-    <% end %>
+<div class="form-container">
+    <form class="form" action="<%= action %>" method="post">
+        <div>
+            <%= auth_token %>
+            <% if is_edit %>
+                <input type="hidden" name="_method" value="patch">
+            <% end %>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="business[name]" value="<%= business.name %>">
+            <% if is_edit %>
+                <h2>Edit your business!</h2>
+            <% else %>
+                <h2>Create a new business!</h2>
+            <% end %>
 
-    <label for="description">Description</label>
-    <textarea id="description" name="business[description]" rows="4" cols="50"><%= business.description %></textarea>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="business[name]" value="<%= business.name %>">
 
-    <input type="submit" value="<%= button_text %>">
-</form>
+            <label for="description">Description</label>
+            <textarea id="description" name="business[description]" rows="4" cols="50"><%= business.description %></textarea>
+
+            <input type="submit" value="<%= button_text %>">
+        </div>
+    </form>
+</div>
