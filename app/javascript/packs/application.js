@@ -30,6 +30,16 @@ $(document).on('turbolinks:load', function() {
         $(event.currentTarget).removeClass('hover-grow');
     })
 
+    $('.social-links a svg').on('mouseenter', event => {
+        $(event.currentTarget).addClass('social-hover');
+        $(event.currentTarget).removeClass('no-social-hover');
+    })
+
+    $('.social-links a svg').on('mouseleave', event => {
+        $(event.currentTarget).addClass('no-social-hover');
+        $(event.currentTarget).removeClass('social-hover');
+    })
+
     // User show page
     $('.business-tile').on('mouseenter', event => {
         $(event.currentTarget).addClass('hovering');
