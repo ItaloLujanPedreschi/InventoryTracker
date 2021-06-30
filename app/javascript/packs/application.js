@@ -40,6 +40,13 @@ $(document).on('turbolinks:load', function() {
         $(event.currentTarget).removeClass('social-hover');
     })
 
+    // Demo Login
+    $('#demo-login').on('click', () => {
+        $('#email-home').val("demo@mail.com");
+        $('#password-home').val("password");
+        $('#login-form').trigger("submit")
+    })
+
     // User show page
     $('.business-tile').on('mouseenter', event => {
         $(event.currentTarget).addClass('hovering');

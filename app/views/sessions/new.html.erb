@@ -19,19 +19,21 @@
                 </svg>
             </a>
         </ul>
-        <form class="horizontal-form" action="<%= session_url %>" method="post">
+
+        <form id="login-form" class="horizontal-form" action="<%= session_url %>" method="post">
             <%= auth_token %>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="user[email]">
+            <input type="text" id="email-home" name="user[email]">
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="user[password]">
+            <input type="password" id="password-home" name="user[password]">
 
             <input class="submit login" type="submit" value="Login">
         </form>
     </div>
     <div class="home-body">
         <a class="sign-up" href="<%= new_user_url %>">Sign up!</a>
+        <button type="button" id="demo-login" class="demo-login login">Demo Login</button>
     </div>
 </div>

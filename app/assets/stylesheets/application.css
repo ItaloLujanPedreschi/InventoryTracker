@@ -69,7 +69,8 @@ header ul li:nth-child(2) {
 }
 
 input,
-textarea {
+textarea,
+button {
     border: none;
     background-image: none;
     background-color: transparent;
@@ -289,4 +290,10 @@ input {
 
 input[type="submit"]:disabled {
     opacity: 0.5;
+}
+
+#demo-login {
+    color: black;
+    margin-top: 10px;
+    font-size: 24px;
 }
